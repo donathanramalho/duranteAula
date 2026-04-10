@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
-const Person = mongoose.model('Person', {
+const Game = mongoose.model('Game', {
     name: String,
-    lastName: String,
-    age: Number,
+    genre: String,
+    year: Number,
     isActive: { type: Boolean, default: true }
 });
 
-module.exports = Person;
+module.exports = Game;
